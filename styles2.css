@@ -1,0 +1,321 @@
+/* Import font Roboto */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
+
+body, html {
+      margin: 0;
+      padding: 0;
+    }
+
+
+    .bg-custom {
+      position: relative;
+      height: 100vh;
+      background-image: url('aa.png'); /* Ganti dengan path gambar background Anda */
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .bg-custom-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0,0,0,0.6);
+    }
+    .text-bright {
+      color: white;
+      opacity: 0.9; /* Menyesuaikan opasitas teks */
+    }
+    .navbar {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+    }
+    .navbar-nav .nav-item {
+      margin: 0 10px;
+    }
+    .navbar-brand {
+      color: white;
+    }
+    .navbar-nav .nav-link {
+      color: white !important;
+    }
+    .navbar {
+      background-color: #333333 !important;
+    }
+
+
+
+
+/*produk*/
+
+/* Style untuk section produk */
+#produk {
+    text-align: center;
+    padding: 2%;
+}
+
+.produk-container {
+    display: flex;
+    justify-content: center;
+    gap: 2%;
+    margin-top: 2%;
+}
+
+
+/* Style untuk card */
+.product-title {
+font-size: 48px; /* Ukuran judul yang lebih besar */
+      font-weight: bold;
+      color: white; /* Warna putih */
+      -webkit-text-stroke: 1.5px black; /* Outline hitam */
+      text-shadow: 1.5px 1.5px 0 black, -1.5px -1.5px 0 black, 1.5px -1.5px 0 black, -1.5px 1.5px 0 black; /* Shadow hitam 
+      */
+      }
+
+     
+      @media screen and (max-width: 768px) {
+        .product-title {
+        font-size: 32px;
+        -webkit-text-stroke: 0.5px black; /* Outline hitam */
+         text-shadow: 0.5px 0.5px 0 black, -0.5px -0.5px 0 black, 0.5px -0.5px 0 black, -0.5px 0.5px 0 black;
+      }
+    }
+
+
+
+.card {
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    padding: 2%;
+    width: 45%; /* Menggunakan persentase untuk responsivitas */
+}
+
+.card img {
+    width: 100%;
+    height: 100%; /* Untuk menjaga proporsi aspek gambar */
+    border-radius: 0.5rem;
+}
+
+.card h3 {
+    font-family: 'Roboto Medium', san-serif;
+    margin-top: 1rem;
+}
+
+/* Atur ulang ukuran dan jenis font tulisan harga */
+.card p {
+    margin-top: 0.5rem;
+    font-size: 1.2rem; /* Ubah ukuran font menjadi lebih besar */
+    font-weight: bold; /* Atur bobot font menjadi tebal */
+    color: #007bff; /* Ubah warna tulisan harga menjadi biru agar mencolok */
+}
+
+.card button {
+    margin-top: 0.5rem;
+    padding: 0.5rem 1rem;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+}
+
+.card button:hover {
+    background-color: #0056b3;
+}
+
+.card button:focus {
+    outline: none;
+}
+
+/* Style untuk tulisan "Cari kayu lainnya" */
+#produk p {
+    margin-top: 2%;
+}
+
+#produk p a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+#produk p a:hover {
+    text-decoration: underline;
+}
+
+/*about us*/
+.container-aboutus {
+  	  padding: 50px;
+      background-color: rgba(0, 0, 0, 0.8);
+      margin: 0 auto; /* Center the container horizontally */
+      width: 100%; /* Set the width of the container to 100% */
+      height: 100vh; /* Set the height of the container to 70% of the viewport height */
+      display: flex; /* Use flexbox layout */
+      flex-direction: column; /* Stack items vertically */
+      justify-content: center; /* Center items vertically */
+      align-items: center; /* Center items horizontally */
+      text-align: center;
+      color: white; /* Warna tulisan putih */
+      position: relative; /* Membuat posisi relatif untuk tombol panah */
+    }
+    .h1-aboutus {
+     color: rgba(0, 0, 0, 0.8);
+      -webkit-text-stroke: 1.5px white; /* Outline hitam */
+      text-shadow: 1.5px 1.5px 0 white, -1.5px -1.5px 0 white, 1.5px -1.5px 0 white, -1.5px 1.5px 0 white;
+      font-size: 48px;
+      font-weight: bold;
+      text-transform: uppercase;
+ 	  padding-top: -10%;
+    }
+    .qa {
+      display: none;
+      position: relative;
+      max-width: 70%; /* Set the maximum width of the question and answer */
+    }
+    .active {
+      display: block;
+    }
+    .question {
+      font-size: 28px; /* Ukuran pertanyaan lebih besar */
+      padding-top: 10%;
+      margin-bottom: 20px; /* Jarak antara pertanyaan dan jawaban */
+      text-align: center;
+    }
+    .answer {
+      font-size: 24px; /* Ukuran jawaban lebih besar */
+      text-align: center;
+      margin-top: -20px; /* Menggeser jawaban ke atas agar sejajar dengan pertanyaan */
+    }
+    .arrow {
+      cursor: pointer;
+      font-size: 40px; /* Ukuran sedikit lebih besar */
+      color: white;
+      position: absolute; /* Membuat posisi absolut */
+      top: 60%; /* Posisikan ke tengah vertikal */
+      right: 150px; /* Posisikan ke ujung kanan */
+      transform: translateY(-50%); /* Geser ke atas sejauh setengah dari tinggi tombol */
+}
+
+.arrow-left {
+      cursor: pointer;
+      font-size: 40px; /* Ukuran sedikit lebih besar */
+      color: white;
+      position: absolute; /* Membuat posisi absolut */
+      top: 60%; /* Posisikan ke tengah vertikal */
+      left: 150px; /* Posisikan ke ujung kiri */
+      transform: translateY(-50%); /* Geser ke atas sejauh setengah dari tinggi tombol */
+    }
+
+    .sticky-about {
+      position: sticky;
+      top: 0;
+      z-index: 1000; /* Pastikan lebih tinggi dari elemen lain */
+      background-color: rgba(0, 0, 0, 0.8);
+      padding: 10px;
+    }
+/* Media queries untuk layar berukuran kecil */
+    @media screen and (max-width: 768px) {
+      .container-aboutus {
+        padding: 10% 5%;
+      }
+      .h1-aboutus {
+        font-size: 32px;
+         -webkit-text-stroke: 0.5px white; /* Outline hitam */
+      text-shadow: 0.5px 0.5px 0 white, -0.5px -0.5px 0 white, 0.5px -0.5px 0 white, -0.5px 0.5px 0 white;
+      }
+      .question {
+        font-size: 20px;
+      }
+      .answer {
+        font-size: 16px;
+      }
+
+      .arrow {
+      	bottom: 25%;
+      	right: 5%;
+      }
+
+      .arrow-left {
+      	bottom: 25%;
+      	left: 5%;
+      }
+    }
+
+
+
+ /*kontak*/
+.container-kontak {
+      padding: 5% 10%;
+      text-align: center;
+    }
+    .h1-kontak {
+      color: white; /* Warna judul */
+      font-size: 48px;
+       -webkit-text-stroke: 1.5px black; /* Outline hitam */
+      text-shadow: 1.5px 1.5px 0 black, -1.5px -1.5px 0 black, 1.5px -1.5px 0 black, -1.5px 1.5px 0 black;
+      font-weight: bold;
+      text-transform: uppercase;
+      margin-bottom: 30px;
+    }
+    .subtitle {
+      font-size: 24px;
+      margin-bottom: 24px;
+    }
+    .contact-links {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+      margin-right: 5px;
+    }
+    .contact-link {
+      margin: 0 10px;
+    }
+    .contact-link img {
+      width: 60px; /* Lebar logo */
+      height: auto;
+      margin-right: 10px;
+      margin-left: 50px;
+    }
+    .contact-link a {
+      text-decoration: none;
+      color: #333; /* Warna tautan */
+      font-size: 20px;
+    }
+
+ @media screen and (max-width: 768px) {
+      .container-kontak {
+        padding: 10% 5%;
+      }
+      .h1-kontak {
+        font-size: 32px;
+         -webkit-text-stroke: 0.5px black; /* Outline hitam */
+      text-shadow: 0.5px 0.5px 0 black, -0.5px -0.5px 0 black, 0.5px -0.5px 0 black, -0.5px 0.5px 0 black;
+      }
+
+      .subtitle {
+      font-size: 12px;
+      margin-bottom: 20px;
+    }
+    .contact-links {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .contact-link {
+      margin: 10px 0;
+    }
+    .contact-link img {
+      width: 40px; /* Lebar logo */
+      height: auto;
+      margin-right: 5px;
+
+    }
+    .contact-link a {
+      text-decoration: none;
+      color: #333; /* Warna tautan */
+      font-size: 14px;
+    }

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jual Kayu Terpercaya: Temukan Penyedia Kayu di Sini</title>
+  <!-- Bootstrap CSS -->
+  <link href="styles.css" rel="stylesheet">
+  <link href="styles2.css" rel="stylesheet">
+    
+</head>
+<body>
+
+
+<!--beranda-->
+<section id="beranda">
+<div class="bg-custom">
+  <div class="bg-custom-overlay"></div>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+    <div class="container">
+      <a class="navbar-brand" href="#beranda">KayuAlamIndonesiaku</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#beranda">Beranda <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#produk">Produk</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#tentangkami">Tentang Kami</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#kontak">Kontak</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container text-center text-bright">
+    <h1 class="display-4">Selamat Datang di Kayu Alam Indonesiaku!</h1>
+    <p class="lead">Temukan berbagai macam produk kayu berkualitas untuk kebutuhan Anda.</p>
+    <a class="btn btn-primary btn-lg" href="#produk" role="button">Lihat Produk</a>
+  </div>
+</div>
+</section>
+
+<!-- Bootstrap JS, Jquery, Popper.js -->
+
+<div class="wave-divider"></div>
+
+
+<!--produk-->
+<section id="produk">
+        <h1 class="product-title">Produk Kami</h1>
+        <div class="produk-container">
+            <div class="card">
+                <img src="produk/kayumerah.jpg" alt="jual kayu merah murah">
+                <h3>Kayu Merah</h3>
+                <p>Harga mulai dari: Rp 1.250.000,00 / kubik</p>
+                <button onclick="window.location.href='https://wa.me/+62 896-4991-4370'">Pesan Sekarang</button>
+            </div>
+            <div class="card">
+                <img src="produk/kayuracuk.jpg" alt="jual kayu racuk murah">
+                <h3>Kayu Racuk</h3>
+                <p>Harga mulai dari: Rp 1.100.000,00 / kubik</p>
+                <button onclick="window.location.href='https://wa.me/+62 896-4991-4370'">Pesan Sekarang</button>
+            </div>
+        </div>
+        <p><a href="https://wa.me/+62 896-4991-4370">Cari kayu lainnya</a></p>
+    </section>
+
+
+<!--tentang kami-->
+
+<section id="tentangkami">
+<div class="container-aboutus">
+    <h1 class="h1-aboutus">Tentang Kami</h1>
+  <div class="qa active">
+    <div class="question">Apa keunggulan kayu yang Kayu Alam Indonesiaku tawarkan?</div><br>
+    <div class="answer">
+      <p>Kayu kami memiliki kualitas tinggi dan dipilih secara cermat untuk memastikan kekuatan dan daya tahan yang optimal.</p>
+    </div>
+  </div>
+  <div class="qa">
+    <div class="question">Bagaimana proses pengolahan kayu yang Kayu Alam Indonesiaku lakukan?</div><br>
+    <div class="answer">
+      <p>Kami mengutamakan proses pengolahan yang ramah lingkungan dan menghasilkan produk kayu berkualitas tinggi dengan memperhatikan standar keberlanjutan.</p>
+    </div>
+  </div>
+  <div class="qa">
+    <div class="question">Apakah Kayu Alam Indonesiaku menawarkan berbagai jenis kayu?</div><br>
+    <div class="answer">
+      <p>Ya, kami memiliki berbagai jenis kayu termasuk kayu keras dan kayu lunak, serta berbagai ukuran dan bentuk yang sesuai dengan kebutuhan proyek Anda.</p>
+    </div>
+  </div>
+  <div class="qa">
+    <div class="question">Bagaimana cara memesan kayu dari Kayu Alam Indonesiaku? </div><br>
+    <div class="answer">
+      <p>Anda dapat memesan kayu melalui situs web kami dengan mengklik tombol beli yang
+      akan diarahkan langsung ke whatsapp admin kayushop atau anda bisa menghubungi melalui
+      sosial media lainnya yang kami cantumkan di website kami di bagian paling bawah.</p>
+    </div>
+  </div>
+  <div class="qa">
+    <div class="question">Apakah Kayu Alam Indonesiaku menyediakan pengiriman?</div><br>
+    <div class="answer">
+      <p>Ya, kami menyediakan layanan pengiriman ke lokasi Anda dengan biaya yang terjangkau dan waktu pengiriman yang cepat.</p>
+    </div>
+  </div>
+  <div class="qa">
+    <div class="question">Apakah Kayu Alam Indonesiaku menyediakan layanan pemotongan dan penyesuaian ukuran?</div><br>
+    <div class="answer">
+      <p>Ya, kami menyediakan layanan pemotongan dan penyesuaian ukuran sesuai dengan spesifikasi proyek Anda untuk memastikan kepuasan pelanggan.</p>
+    </div>
+  </div>
+  <!-- Tambahkan blok qa untuk pertanya-->
+   <div class="arrow-left">&#9668;</div>
+  <div class="arrow">&#9658;</div>
+</div>
+<script>
+ var qa = document.querySelectorAll('.qa');
+  var arrowLeft = document.querySelector('.arrow-left');
+  var arrow = document.querySelector('.arrow');
+  var currentIndex = 0;
+
+  arrow.addEventListener('click', function() {
+    qa[currentIndex].classList.remove('active');
+    currentIndex = (currentIndex + 1) % qa.length;
+    qa[currentIndex].classList.add('active');
+  });
+
+  arrowLeft.addEventListener('click', function() {
+    qa[currentIndex].classList.remove('active');
+    currentIndex = (currentIndex - 1 + qa.length) % qa.length;
+    qa[currentIndex].classList.add('active');
+  });
+</script>
+<script src="script.js"></script>
+</section>
+
+
+<!--kontak-->
+<section id="kontak">
+<div class="container-kontak">
+  <h1 class="h1-kontak">Kontak Kami</h1>
+  <p class="subtitle">Tanya Dahulu Aja Yuk!</p>
+  <div class="contact-links">
+    <div class="contact-link">
+      <a href="https://wa.me/6289644914370">
+        <img src="logo/whatsapp.png" alt="WhatsApp"> <!-- Ganti "whatsapp.png" dengan nama file logo WA -->
+        6289644914370 <!-- Ganti nomor WhatsApp -->
+      </a>
+    </div>
+    
+    <div class="contact-link">
+      <a href="mailto:kayualamindonesiaku@gmail.com">
+        <img src="logo/gmail.png" alt="Gmail"> <!-- Ganti "gmail.png" dengan nama file logo Gmail -->
+      kayualamindonesiaku@gmail.com <!-- Ganti dengan alamat email -->
+      </a>
+    </div>
+    </div>
+  </div>
+</div>
+</section>
+</body>
+</html>
