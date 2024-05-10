@@ -159,6 +159,7 @@ body, html {
     .produk-container {
         flex-direction: row; /* Mengatur arah baris untuk kartu */
         justify-content: center; /* Mengatur kartu ke tengah */
+          gap:1%;
     }
 
 
