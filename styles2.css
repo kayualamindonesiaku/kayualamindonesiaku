@@ -154,6 +154,15 @@ body, html {
 }
 
 
+/* Media query untuk layar laptop */
+@media screen and (min-width: 768px) {
+    .produk-container {
+        flex-direction: row; /* Mengatur arah baris untuk kartu */
+        justify-content: center; /* Mengatur kartu ke tengah */
+    }
+
+
+
 /*about us*/
 .container-aboutus {
   	  padding: 50px;
