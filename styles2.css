@@ -90,7 +90,7 @@ body, html {
     border-radius: 0.5rem;
     padding: 2%;
     width: 100%; /* Menggunakan lebar penuh untuk responsivitas */
-    max-width: 400px; /* Maksimum lebar kartu */
+    max-width: 600px; /* Maksimum lebar kartu */
     margin: 0 auto; /* Tengahkan kartu */
     background-color: #fff; /* Tambahkan latar belakang putih */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Tambahkan bayangan */
