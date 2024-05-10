@@ -54,62 +54,95 @@ body, html {
 
 
 /*produk*/
-/produk//* Style untuk section produk */ 
-#produk { text-align: center; 
-         padding: 2%; }
 
-.produk-container { display: flex; 
-                   justify-content: center;
-                   gap: 2%; 
-                   margin-top: 2%; }
+/* Style untuk section produk */
+#produk {
+    text-align: center;
+    padding: 2%;
+}
 
-/* Style untuk card */ 
-.product-title { font-size: 48px; /* Ukuran judul yang lebih besar */ 
-font-weight: bold;
-color: white; /*Warna putih */ 
--webkit-text-stroke: 1.5px black; /*Outline hitam*/ 
-text-shadow: 1.5px 1.5px 0 black, -1.5px -1.5px 0 black, 1.5px -1.5px 0 black, -1.5px 1.5px 0 black; /*Shadow hitam */ }
+.produk-container {
+    display: flex;
+    justify-content: center;
+    gap: 2%;
+    margin-top: 2%;
+}
 
-@media screen and (max-width: 768px) 
-{ .product-title
- { font-size: 32px; 
-  -webkit-text-stroke: 0.5px black; /* Outline hitam */ 
-  text-shadow: 0.5px 0.5px 0 black, -0.5px -0.5px 0 black, 0.5px -0.5px 0 black, -0.5px 0.5px 0 black; } }
+/* Style untuk card */
+.product-title {
+    font-size: 48px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 1.5px 1.5px 0 black, -1.5px -1.5px 0 black, 1.5px -1.5px 0 black, -1.5px 1.5px 0 black;
+}
 
-.card { border: 1px solid #ccc; 
-       border-radius: 0.5rem; 
-       padding: 2%; 
-       width: 45%; /* Menggunakan persentase untuk responsivitas */ 
-      }
+@media screen and (max-width: 768px) {
+    .product-title {
+        font-size: 32px;
+        -webkit-text-stroke: 0.5px black;
+        text-shadow: 0.5px 0.5px 0 black, -0.5px -0.5px 0 black, 0.5px -0.5px 0 black, -0.5px 0.5px 0 black;
+    }
+}
 
-.card img { width: 100%; 
-           height: 100%; /* Untuk menjaga proporsi aspek gambar */
-           border-radius: 0.5rem; }
+.card {
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    padding: 2%;
+    width: 100%; /* Menggunakan lebar penuh untuk responsivitas */
+    max-width: 400px; /* Maksimum lebar kartu */
+    margin: 0 auto; /* Tengahkan kartu */
+    background-color: #fff; /* Tambahkan latar belakang putih */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Tambahkan bayangan */
+}
 
-.card h3 { font-family: 'Roboto Medium', san-serif; 
-          margin-top: 1rem; }/* Atur ulang ukuran dan jenis font tulisan harga */
+.card img {
+    width: 100%;
+    border-radius: 0.5rem;
+}
 
-.card p { margin-top: 0.5rem; 
-font-size: 1.2rem; /* Ubah ukuran font menjadi lebih besar */ 
-font-weight: bold; /*Atur bobot font menjadi tebal */ 
-color: #007bff; / *Ubah warna tulisan harga menjadi biru agar mencolok */ }
+.card h3 {
+    font-family: 'Roboto Medium', sans-serif;
+    margin-top: 1rem;
+}
 
-.card button { margin-top: 0.5rem; 
-              padding: 0.5rem 1rem; 
-              background-color: #007bff;
-              color: #fff; 
-              border: none; 
-              border-radius: 0.25rem; 
-              cursor: pointer; }
+.card p {
+    margin-top: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #007bff;
+}
 
-.card button:hover { background-color: #0056b3; }.
-card button:focus { outline: none; }/* Style untuk tulisan "Cari kayu lainnya" */
-#produk p { margin-top: 2%; } 
-#produk p a { color: #007bff; text-decoration: none; } 
-#produk p a:hover { text-decoration: underline; }
+.card button {
+    margin-top: 0.5rem;
+    padding: 0.5rem 1rem;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+}
 
+.card button:hover {
+    background-color: #0056b3;
+}
 
+.card button:focus {
+    outline: none;
+}
 
+/* Style untuk tulisan "Cari kayu lainnya" */
+#produk p {
+    margin-top: 2%;
+}
+
+#produk p a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+#produk p a:hover {
+    text-decoration: underline;
+}
 /*about us*/
 .container-aboutus {
   	  padding: 50px;
