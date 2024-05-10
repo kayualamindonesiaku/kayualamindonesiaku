@@ -82,37 +82,37 @@ font-size: 48px; /* Ukuran judul yang lebih besar */
      
       .card {
     border: 1px solid #ccc;
-    border-radius: 0.5rem;
-    padding: 2%;
+    border-radius: 5px;
+    padding: 20px;
     width: 45%; /* Menggunakan persentase untuk responsivitas */
 }
 
 .card img {
     width: 100%;
     height: 100%; /* Untuk menjaga proporsi aspek gambar */
-    border-radius: 0.5rem;
+    border-radius: 5px;
 }
 
 .card h3 {
     font-family: 'Roboto Medium', san-serif;
-    margin-top: 1rem;
+    margin-top: 20px;
 }
 
 /* Atur ulang ukuran dan jenis font tulisan harga */
 .card p {
-    margin-top: 0.5rem;
-    font-size: 1.2rem; /* Ubah ukuran font menjadi lebih besar */
+    margin-top: 10px;
+    font-size: 18px; /* Ubah ukuran font menjadi lebih besar */
     font-weight: bold; /* Atur bobot font menjadi tebal */
     color: #007bff; /* Ubah warna tulisan harga menjadi biru agar mencolok */
 }
 
 .card button {
-    margin-top: 0.5rem;
-    padding: 0.5rem 1rem;
+    margin-top: 10px;
+    padding: 10px 20px;
     background-color: #007bff;
     color: #fff;
     border: none;
-    border-radius: 0.25rem;
+    border-radius: 3px;
     cursor: pointer;
 }
 
@@ -126,7 +126,7 @@ font-size: 48px; /* Ukuran judul yang lebih besar */
 
 /* Style untuk tulisan "Cari kayu lainnya" */
 #produk p {
-    margin-top: 2%;
+    margin-top: 20px;
 }
 
 #produk p a {
