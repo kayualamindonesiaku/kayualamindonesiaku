@@ -57,17 +57,18 @@ body, html {
 /produk//* Style untuk section produk */ 
 #produk { text-align: center; 
          padding: 2%; }
+
 .produk-container { display: flex; 
                    justify-content: center;
                    gap: 2%; 
                    margin-top: 2%; }
 
-/* Style untuk card / 
-.product-title { font-size: 48px; / Ukuran judul yang lebih besar / 
+/* Style untuk card */ 
+.product-title { font-size: 48px; /* Ukuran judul yang lebih besar */ 
 font-weight: bold;
-color: white; / Warna putih / 
--webkit-text-stroke: 1.5px black; / Outline hitam / 
-text-shadow: 1.5px 1.5px 0 black, -1.5px -1.5px 0 black, 1.5px -1.5px 0 black, -1.5px 1.5px 0 black; / Shadow hitam */ }
+color: white; /*Warna putih */ 
+-webkit-text-stroke: 1.5px black; /*Outline hitam*/ 
+text-shadow: 1.5px 1.5px 0 black, -1.5px -1.5px 0 black, 1.5px -1.5px 0 black, -1.5px 1.5px 0 black; /*Shadow hitam */ }
 
 @media screen and (max-width: 768px) 
 { .product-title
@@ -90,7 +91,7 @@ text-shadow: 1.5px 1.5px 0 black, -1.5px -1.5px 0 black, 1.5px -1.5px 0 black, -
 
 .card p { margin-top: 0.5rem; 
 font-size: 1.2rem; /* Ubah ukuran font menjadi lebih besar */ 
-font-weight: bold; / *Atur bobot font menjadi tebal */ 
+font-weight: bold; /*Atur bobot font menjadi tebal */ 
 color: #007bff; / *Ubah warna tulisan harga menjadi biru agar mencolok */ }
 
 .card button { margin-top: 0.5rem; 
