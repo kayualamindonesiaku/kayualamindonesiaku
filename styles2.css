@@ -84,6 +84,7 @@ body, html {
     }
 }
 
+/* Style untuk card */
 .card {
     border: 1px solid #ccc;
     border-radius: 0.5rem;
@@ -93,13 +94,19 @@ body, html {
     margin: 0 auto; /* Tengahkan kartu */
     background-color: #fff; /* Tambahkan latar belakang putih */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Tambahkan bayangan */
+    display: flex; /* Menggunakan Flexbox */
+    flex-direction: column; /* Menetapkan arah kolom untuk konten */
 }
 
 .card img {
+    flex-grow: 1; /* Mengatur gambar untuk memenuhi ruang yang tersedia */
     width: 100%;
- height: 50%;
-
     border-radius: 0.5rem;
+    object-fit: cover; /* Memastikan gambar tetap proporsional */
+}
+
+.card-content {
+    flex-grow: 0; /* Konten lainnya tidak memperluas */
 }
 
 .card h3 {
@@ -145,6 +152,8 @@ body, html {
 #produk p a:hover {
     text-decoration: underline;
 }
+
+
 /*about us*/
 .container-aboutus {
   	  padding: 50px;
