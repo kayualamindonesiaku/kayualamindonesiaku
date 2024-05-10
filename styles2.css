@@ -94,8 +94,10 @@ body, html {
     margin: 0 auto; /* Tengahkan kartu */
     background-color: #fff; /* Tambahkan latar belakang putih */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Tambahkan bayangan */
-    display: inline-block; /* Menggunakan Flexbox */
+    display: flex; /* Menggunakan Flexbox */
     flex-direction: column; /* Menetapkan arah kolom untuk konten */
+    max-height:200px;
+    overflow:hidden;
 }
 
 .card img {
