@@ -80,17 +80,7 @@ font-size: 48px; /* Ukuran judul yang lebih besar */
       }
 
      
-      @media screen and (max-width: 768px) {
-        .product-title {
-        font-size: 32px;
-        -webkit-text-stroke: 0.5px black; /* Outline hitam */
-         text-shadow: 0.5px 0.5px 0 black, -0.5px -0.5px 0 black, 0.5px -0.5px 0 black, -0.5px 0.5px 0 black;
-      }
-    }
-
-
-
-.card {
+      .card {
     border: 1px solid #ccc;
     border-radius: 0.5rem;
     padding: 2%;
@@ -147,6 +137,19 @@ font-size: 48px; /* Ukuran judul yang lebih besar */
 #produk p a:hover {
     text-decoration: underline;
 }
+
+
+
+@media screen and (max-width: 768px) {
+        .product-title {
+        font-size: 32px;
+        -webkit-text-stroke: 0.5px black; /* Outline hitam */
+         text-shadow: 0.5px 0.5px 0 black, -0.5px -0.5px 0 black, 0.5px -0.5px 0 black, -0.5px 0.5px 0 black;
+      }
+    }
+
+
+
 
 /*about us*/
 .container-aboutus {
