@@ -88,7 +88,7 @@ body, html {
 .card {
     border: 1px solid #ccc;
     border-radius: 0.5rem;
-    padding: 2%;
+    padding: 1%;
     width: 100%; /* Menggunakan lebar penuh untuk responsivitas */
     max-width: 600px; /* Maksimum lebar kartu */
     margin: 0 auto; /* Tengahkan kartu */
